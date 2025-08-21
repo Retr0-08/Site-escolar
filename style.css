@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e fundo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #f1f1f1;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #d1c4e9;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 18px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+/* Main */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  flex-grow: 1;
+}
+
+main h2 {
+  font-size: 2rem;
+  color: #ede7f6;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b39ddb;
+  padding-bottom: 8px;
+}
+
+main p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #d1c4e9;
+}
+
+/* Fórmulas */
+.formula {
+  background-color: #512da8cc;
+  color: #ede7f6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  user-select: all;
+  letter-spacing: 2px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  color: #d1c4e9;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  user-select: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 25px 20px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  .formula {
+    font-size: 1.3rem;
+    padding: 14px 0;
+  }
+}
