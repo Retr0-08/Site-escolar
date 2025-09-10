@@ -84,6 +84,16 @@ main p {
   color: #d1c4e9;
 }
 
+/* Imagens */
+.lei-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
 /* Fórmulas */
 .formula {
   background-color: #512da8cc;
@@ -120,6 +130,11 @@ footer {
     font-size: 1rem;
     padding: 8px 14px;
   }
+
+  .formula {
+    font-size: 1.3rem;
+    padding: 14px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -132,11 +147,25 @@ footer {
   }
 
   main h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lei-img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .formula {
-    font-size: 1.3rem;
-    padding: 14px 0;
+    font-size: 1.2rem;
+    padding: 12px 0;
   }
 }
